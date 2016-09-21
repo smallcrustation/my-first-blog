@@ -1,0 +1,12 @@
+*.pyc
+__pycache__
+env
+db.sqlite3
+/static
+.DS_Store
+bin
+GirlsDJANGOfirst.pyproj
+obj
+ptvs_virtualenv_proxy.py
+web.config
+web.debug.config
