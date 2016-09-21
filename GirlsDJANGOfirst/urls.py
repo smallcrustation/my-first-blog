@@ -10,8 +10,8 @@ admin.autodiscover()
 
 urlpatterns = [
     # Examples:
-    # url(r'^$', GirlsDJANGOfirst.views.home, name='home'),
-    # url(r'^GirlsDJANGOfirst/', include('GirlsDJANGOfirst.GirlsDJANGOfirst.urls')),
+    url(r'^$', GirlsDJANGOfirst.views.home, name='home'),
+    url(r'^GirlsDJANGOfirst/', include('GirlsDJANGOfirst.GirlsDJANGOfirst.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
