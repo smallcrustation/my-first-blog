@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#redirects us here after login
+LOGIN_REDIRECT_URL = '/'
 
 # Application definition
 
@@ -125,3 +127,8 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 #STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+
+try:
+    from.local_settings import *
+except ImportError:
+    pass
